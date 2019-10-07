@@ -1,0 +1,85 @@
+<?php  ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="utf-8">
+    <title>{titulo} </title>
+
+    <style type="text/css">
+        body {
+          background-color: #ffe5eb;
+        }
+       
+        .mail { 
+          border: 5px solid #000;
+          padding: 5px;
+         }
+        h1{
+
+            color: purple;
+
+        }
+
+        p{
+
+            font-size: 1rem;
+
+        }
+        .bloque{
+          border:5px solid#000;
+        }     
+    </style>
+</head>
+<body class="container">
+  <div class="mail">
+  <div><img src="http://comedorescomunitarios.ga/img/cabecera_boletin.png" width="100%" height="auto"></div>
+  <div class="row">
+    <div class="col m2 logo_boletin"><img src="http://comedorescomunitarios.ga/img/logo.png" width="150px" height="120px"></div>
+    <div class="col m8 center"><h1>{titulo}</h1></div>
+    <div class="col m2"> 
+      <div class="row center"><div>Boletín n° {id_boletin}</div><div><sub>{fecha}</sub></div></div>
+    </div>
+  </div>
+  <div class="row">
+
+      <div class="col m5 bloque">{sub1}</div>
+      <div class="col m1"></div>
+      <div class="col m6 bloque">{sub2}</div>
+  </div>
+  <div class="row">
+      <div class="col m2 bloque">{bloque1}</div>
+      <div class="col m1"> </div>
+      <div class="col m2 bloque">{bloque2}</div>
+      <div class="col m1"> </div>
+      <div class="col m2 bloque">{bloque3}</div>
+    </div>
+
+  <div class="row">
+      <div class="col m6 center bloque">
+        <img src=" {foto} " width="90%" height="auto" id="imagenmuestra">
+        <div class="col m12 bloque">{bloque4}</div>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col m8 offset-m2 bloque">{bloque5}</div>
+  </div>  
+ </div>     
+  <FORM NAME="buttonbar">
+<INPUT TYPE="button" VALUE="Volver" onClick="history.back()">
+</FORM>
+</body>
+</html>
